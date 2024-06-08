@@ -14,11 +14,11 @@ const App: React.FC = () => {
   return (
     <LanguageProvider>
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        <header className="w-full p-4 bg-gray-800 text-white flex justify-between items-center">
-          <h1 className="text-4xl font-bold">Mi Portafolio</h1>
+        <header className="w-full p-4 bg-gray-800 text-white flex flex-col md:flex-row justify-between items-center">
+          <h1 className="text-4xl font-bold mb-4 md:mb-0">Mi Portafolio</h1>
           <LanguageSelector />
         </header>
-        <main className="flex-1 p-4">
+        <main className="flex-1 p-4 w-full max-w-6xl mx-auto">
           <ProfileCard />
           <SectionDivider />
           <Technologies />

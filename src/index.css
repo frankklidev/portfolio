@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Asegúrate de tener estos estilos globales */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f7fafc; /* Fondo claro para todo el documento */
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -3,7 +3,7 @@ import { FaDownload, FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from 'react-i
 
 const Contact: React.FC = () => {
   return (
-    <div className="flex justify-center mt-4 space-x-2">
+    <div className="flex flex-col items-center mt-4 space-y-2 md:space-y-0 md:flex-row md:space-x-2">
       <button className="btn btn-primary flex items-center text-lg">
         <FaEnvelope className="mr-2" /> frankkli.personal@gmail.com
       </button>
@@ -21,4 +21,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-
