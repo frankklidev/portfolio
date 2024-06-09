@@ -1,5 +1,5 @@
 import React from 'react';
-import { I18nextProvider } from 'react-i18next';
+import { I18nextProvider, useTranslation } from 'react-i18next';
 
 import ProfileCard from './components/ProfileCard';
 
@@ -14,12 +14,13 @@ import SectionDivider from './components/Divider';
 import Technologies from './components/Tecnologies';
 
 const App: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <I18nextProvider i18n={i18n}>
       <LanguageProvider>
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 overflow-x-hidden">
           <header className="w-full p-4 bg-gray-800 text-white flex flex-col md:flex-row justify-between items-center">
-            <h1 className="text-4xl font-bold mb-4 md:mb-0">{i18n.t('Portfolio')}</h1>
+          <h1 className="text-4xl font-bold mb-4 md:mb-0">{t('Portfolio')}</h1>
             <LanguageSelector />
           </header>
           <main className="flex-1 p-4 w-full max-w-6xl mx-auto">
