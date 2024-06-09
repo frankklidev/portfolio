@@ -5,7 +5,7 @@ import { SiNextdotjs,SiTypescript } from 'react-icons/si';
 const Technologies: React.FC = () => {
   return (
     <div className="p-6 bg-white shadow-lg rounded-lg">
-      <h2 className="text-2xl font-bold text-center mb-6">Tecnologías</h2>
+      <h2 className="text-2xl font-extrabold text-center mb-6">Tecnologías</h2>
       <div className="flex flex-wrap justify-center gap-6">
         <div className="flex flex-col items-center">
           <FaReact className="text-blue-500 text-6xl" />

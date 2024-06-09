@@ -35,7 +35,7 @@ const Experience: React.FC = () => {
 
   return (
     <div className="p-6 rounded-lg">
-      <h2 className="text-2xl font-bold text-center mb-6">Experiencia</h2>
+      <h2 className="text-2xl font-extrabold text-center mb-6">Experiencia</h2>
       <ul className="space-y-8">
         {experiences.map((exp, index) => (
           <li key={index} className="flex items-start space-x-4">
@@ -43,8 +43,8 @@ const Experience: React.FC = () => {
               {exp.icon}
             </div>
             <div className="flex-grow">
-              <h3 className="text-xl font-extrabold text-black">{exp.company}</h3>
-              <p className="text-lg text-black font-semibold">{exp.role}</p>
+              <h3 className="text-xl font-extrabold text-gray-500">{exp.company}</h3>
+              <p className="text-lg text-gray-500 font-semibold">{exp.role}</p>
               <p className="text-gray-700">{exp.description}</p>
             </div>
             <div className="text-green-500">
