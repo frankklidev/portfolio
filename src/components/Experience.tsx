@@ -1,41 +1,44 @@
 import React from 'react';
 import { FaBriefcase, FaLaptopCode, FaDatabase } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const Experience: React.FC = () => {
+  const { t } = useTranslation();
+
   const experiences = [
     {
-      role: "Desarrollador Freelance",
-      company: "Freelance",
+      role: t("Freelance Developer"),
+      company: t("Freelance"),
       duration: "Enero 2024 - Presente",
-      description: "Actualmente estoy inmerso en el desarrollo de apps a la medida",
+      description: t("Currently developing custom apps"),
       icon: <FaLaptopCode className="w-10 h-10 text-green-500 font-bold" />
     },
     {
-      role: "Desarrollador Frontend",
-      company: "Empresa Codeberry",
+      role: t("Frontend Developer at Codeberry"),
+      company: t("Empresa Codeberry"),
       duration: "Septiembre 2023 - Diciembre 2023",
-      description: "Desarrollé funcionalidades web utilizando Next.js y TypeScript, mejorando la eficiencia del equipo y la experiencia del usuario.",
+      description: t("Developed web functionalities using Next.js and TypeScript, improving team efficiency and user experience."),
       icon: <FaLaptopCode className="w-10 h-10 text-green-500 font-bold" />
     },
     {
-      role: "Desarrollador Backend",
-      company: "Empresa Countigo",
+      role: t("Backend Developer at Countigo"),
+      company: t("Empresa Countigo"),
       duration: "Septiembre 2022 - Diciembre 2023",
-      description: "Implementé soluciones backend con Node.js y Express, y colaboré en proyectos de frontend con React.js.",
+      description: t("Implemented backend solutions with Node.js and Express, and collaborated on frontend projects with React.js."),
       icon: <FaDatabase className="w-10 h-10 text-green-500 font-bold" />
     },
     {
-      role: "Desarrollador Junior",
-      company: "Empresa Get",
+      role: t("Junior Developer at Get"),
+      company: t("Empresa Get"),
       duration: "Octubre 2018 - Abril 2020",
-      description: "Trabajé en proyectos web utilizando HTML, CSS y JavaScript, y asistí en la creación de módulos reutilizables.",
+      description: t("Worked on web projects using HTML, CSS, and JavaScript, and assisted in creating reusable modules."),
       icon: <FaBriefcase className="w-10 h-10 text-green-500 font-bold" />
     }
   ];
 
   return (
     <div className="p-6 rounded-lg">
-      <h2 className="text-2xl font-extrabold text-center mb-6">Experiencia</h2>
+      <h2 className="text-2xl font-extrabold text-center mb-6">{t('Experience')}</h2>
       <ul className="space-y-8">
         {experiences.map((exp, index) => (
           <li key={index} className="flex items-start space-x-4">

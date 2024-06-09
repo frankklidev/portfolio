@@ -1,30 +1,33 @@
 import React from 'react';
 import { FaSchool, FaGraduationCap } from 'react-icons/fa';
 import { MdVerified } from 'react-icons/md';
-
-const education = [
-  {
-    school: "Universidad Tecnológica de La Habana (CUJAE)",
-    degree: "Ingeniería de Software",
-    description: "Me gradué en Ingeniería de Software, adquiriendo habilidades avanzadas en desarrollo y gestión de software.",
-    status: "Graduado",
-    icon: <FaGraduationCap className="w-10 h-10 text-green-500" />,
-    statusIcon: <MdVerified className="w-6 h-6 text-green-500" />
-  },
-  {
-    school: "Preuniversitario",
-    degree: "Bachillerato en Ciencias",
-    description: "Estudios generales con enfoque en ciencias y matemáticas.",
-    status: "Graduado",
-    icon: <FaSchool className="w-10 h-10 text-green-500" />,
-    statusIcon: <MdVerified className="w-6 h-6 text-green-500" />
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 const Education: React.FC = () => {
+  const { t } = useTranslation();
+
+  const education = [
+    {
+      school: t("Universidad Tecnológica de La Habana (CUJAE)"),
+      degree: t("Software Engineering Degree"),
+      description: t("Graduated in Software Engineering, acquiring advanced skills in software development and management."),
+      status: t("Graduated"),
+      icon: <FaGraduationCap className="w-10 h-10 text-green-500" />,
+      statusIcon: <MdVerified className="w-6 h-6 text-green-500" />
+    },
+    {
+      school: t("High School"),
+      degree: t("Pre-University"),
+      description: t("General studies with a focus on science and mathematics."),
+      status: t("Graduated"),
+      icon: <FaSchool className="w-10 h-10 text-green-500" />,
+      statusIcon: <MdVerified className="w-6 h-6 text-green-500" />
+    }
+  ];
+
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold text-center mb-6">Formación</h2>
+      <h2 className="text-2xl font-bold text-center mb-6">{t('Education')}</h2>
       <div className="space-y-8">
         {education.map((edu, index) => (
           <div key={index} className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden">

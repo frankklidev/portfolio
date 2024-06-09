@@ -1,11 +1,14 @@
 import React from 'react';
 import { FaReact, FaCss3Alt, FaJs, FaNodeJs, FaVuejs } from 'react-icons/fa';
-import { SiNextdotjs,SiTypescript } from 'react-icons/si';
+import { SiNextdotjs, SiTypescript } from 'react-icons/si';
+import { useTranslation } from 'react-i18next';
 
 const Technologies: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="p-6 bg-white shadow-lg rounded-lg">
-      <h2 className="text-2xl font-extrabold text-center mb-6">Tecnologías</h2>
+      <h2 className="text-2xl font-extrabold text-center mb-6">{t('Technologies')}</h2>
       <div className="flex flex-wrap justify-center gap-6">
         <div className="flex flex-col items-center">
           <FaReact className="text-blue-500 text-6xl" />
