@@ -21,7 +21,7 @@ const projects = [
     description: "JewerlyDescription",
     tech: ["DaisyUI", "React.js"],
     links: {
-      demo: "https://joyeria-frankklidevs-projects.vercel.app/",
+      demo: "https://joyeria-nine.vercel.app/",
       github: "https://github.com/frankklidev/joyeria"
     },
     image: "https://images.unsplash.com/photo-1626122509259-ea8e0a136ada?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amV3ZXJseXxlbnwwfHwwfHx8MA%3D%3D",
@@ -51,8 +51,8 @@ const Projects: React.FC = () => {
                 ))}
               </div>
               <div className="flex space-x-4 mt-2">
-                <a href={project.links.demo} className="text-green-500"><FaLink className="w-6 h-6" /></a>
-                <a href={project.links.github} className="text-green-500"><FaGithub className="w-6 h-6" /></a>
+                <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="text-green-500"><FaLink className="w-6 h-6" /></a>
+                <a href={project.links.github} target="_blank" rel="noopener noreferrer" className="text-green-500"><FaGithub className="w-6 h-6" /></a>
               </div>
             </div>
             <img src={project.image} alt={project.title} className="w-full md:w-1/3 object-cover md:max-h-80" />

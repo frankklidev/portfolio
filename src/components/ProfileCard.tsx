@@ -26,10 +26,10 @@ const ProfileCard: React.FC = () => {
           <a href="/path/to/your/resume.pdf" className="btn flex items-center text-lg bg-green-500 text-white border-none" download>
             <FaFileAlt className="mr-2" /> {t('Resume')} <FaDownload className="ml-2" />
           </a>
-          <a href="https://github.com/frankklidev" className="btn btn-primary flex items-center text-lg bg-black text-white border-none">
+          <a href="https://github.com/frankklidev" target="_blank" rel="noopener noreferrer" className="btn btn-primary flex items-center text-lg bg-black text-white border-none">
             <FaGithub className="mr-2" /> {t('GitHub')}
           </a>
-          <a href="https://www.linkedin.com/in/frankklidev/" className="btn btn-primary flex items-center text-lg bg-blue-600 text-white border-none">
+          <a href="https://www.linkedin.com/in/frankklidev/" target="_blank" rel="noopener noreferrer" className="btn btn-primary flex items-center text-lg bg-blue-600 text-white border-none">
             <FaLinkedin className="mr-2" /> {t('LinkedIn')}
           </a>
         </div>
