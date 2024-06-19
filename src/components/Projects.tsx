@@ -21,8 +21,8 @@ const projects = [
     description: "JewerlyDescription",
     tech: ["DaisyUI", "React.js"],
     links: {
-      demo: "#",
-      github: "#"
+      demo: "https://joyeria-frankklidevs-projects.vercel.app/",
+      github: "https://github.com/frankklidev/joyeria"
     },
     image: "https://images.unsplash.com/photo-1626122509259-ea8e0a136ada?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amV3ZXJseXxlbnwwfHwwfHx8MA%3D%3D",
     icon: <FaReact className="w-10 h-10 text-green-500" />
