@@ -20,18 +20,18 @@ const ProfileCard: React.FC = () => {
           </p>
         </div>
         <div className="mt-4 flex flex-wrap justify-center md:justify-start gap-2 w-full">
-          <button className="btn flex items-center text-lg bg-gray-600 text-white border-none">
+          <a href="mailto:frankkli.personal@gmail.com" className="btn flex items-center text-lg bg-gray-600 text-white border-none">
             <FaEnvelope className="mr-2" /> frankkli.personal@gmail.com
-          </button>
-          <button className="btn flex items-center text-lg bg-green-500 text-white border-none">
+          </a>
+          <a href="/path/to/your/resume.pdf" className="btn flex items-center text-lg bg-green-500 text-white border-none" download>
             <FaFileAlt className="mr-2" /> {t('Resume')} <FaDownload className="ml-2" />
-          </button>
-          <button className="btn btn-primary flex items-center text-lg bg-black text-white border-none">
+          </a>
+          <a href="https://github.com/frankklidev" className="btn btn-primary flex items-center text-lg bg-black text-white border-none">
             <FaGithub className="mr-2" /> {t('GitHub')}
-          </button>
-          <button className="btn btn-primary flex items-center text-lg bg-blue-600 text-white border-none">
+          </a>
+          <a href="https://www.linkedin.com/in/frankklidev/" className="btn btn-primary flex items-center text-lg bg-blue-600 text-white border-none">
             <FaLinkedin className="mr-2" /> {t('LinkedIn')}
-          </button>
+          </a>
         </div>
       </div>
     </div>
