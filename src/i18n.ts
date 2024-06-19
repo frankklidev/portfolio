@@ -32,6 +32,9 @@ const resources = {
       "Graduated": "Graduated",
       "Pre-University": "Pre-University",
       "Science Baccalaureate": "Science Baccalaureate",
+      "JewerlySite": "Jewelry Catalog",
+      "JewerlyCatalog": "Jewelry Catalog",
+      "JewerlyDescription": "A catalog website for showcasing jewelry items, built using DaisyUI and React.js.",
       "General studies with a focus on science and mathematics.": "General studies with a focus on science and mathematics."
     }
   },
@@ -65,6 +68,9 @@ const resources = {
       "Graduated": "Graduado",
       "Pre-University": "Preuniversitario",
       "Science Baccalaureate": "Bachillerato en Ciencias",
+      "JewerlySite": "Catálogo de Joyas",
+      "JewerlyCatalog": "Catálogo de Joyas",
+      "JewerlyDescription": "Un sitio web de catálogo para mostrar artículos de joyería, construido usando DaisyUI y React.js. El sitio permite a los usuarios explorar una amplia variedad de productos, ver detalles detallados de cada artículo y ponerse en contacto con la joyería para consultas y pedidos. Además, los administradores pueden gestionar el inventario, actualizar información de los productos y ver estadísticas de ventas.",
       "General studies with a focus on science and mathematics.": "Estudios generales con enfoque en ciencias y matemáticas."
     }
   }

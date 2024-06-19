@@ -35,7 +35,7 @@ const Technologies: React.FC = () => {
           <p className="mt-2 text-gray-700">Vue.js</p>
         </div>
         <div className="flex flex-col items-center">
-          <SiTypescript className="text-green-600 text-6xl" />
+          <SiTypescript className="text-blue-500 text-6xl" />
           <p className="mt-2 text-gray-700">TypeScript</p>
         </div>
       </div>
